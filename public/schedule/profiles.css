@@ -1,0 +1,64 @@
+body #day-profile-view {
+  display: block;
+}
+
+body #day-profile-view .profile-container {
+  max-width: 100%;
+  margin: 20px auto;
+  background-color: #b2f6fa;
+  color: #222823;
+  padding: 10px;
+  border-radius: 10px;
+  border : 5px solid rgb(150, 184, 243);
+}
+
+body #day-profile-view .profile-container h3 {
+  text-align: center;
+}
+
+body #day-profile-view .profile-container section {
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+body #day-profile-view .profile-container section a,
+body #day-profile-view .profile-container section a:visited,
+body #day-profile-view .profile-container section a:link {
+  text-decoration: none;
+  color: #f8ac13;
+}
+
+body #day-profile-view .profile-container .schedule .appointment {
+  background-color: #2ee9d6;
+  border: 2px solid #222823;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2px;
+  height:150px;
+}
+
+body #day-profile-view .profile-container .schedule .appointment .apt-duration,
+body #day-profile-view .profile-container .schedule .appointment .apt-phone1,
+body #day-profile-view .profile-container .schedule .appointment .apt-delete,
+body #day-profile-view .profile-container .schedule .appointment .reason {
+  display: flex;
+}
+
+body #day-profile-view .profile-container .schedule .appointment .reason {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+@media screen and (min-width: 640px) {
+  body #day-profile-view .profile-container {
+    max-width: 70%;
+  }
+  body #day-profile-view .profile-container section {
+    text-align: center;
+  }
+  body #day-profile-view .profile-container .schedule .appointment {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/main/styles.css" />
+    <title><%= pageTitle %></title>
+  </head>
+  <body>
+    <header><%- include("../views/includes/nav.ejs") %></header>
+    <main>
+      <h1>
+        <div
+          class="HEADING"
+          style="
+            text-align: center;
+            font-weight: 600;
+            font-size: 60px;
+            text-decoration: underline;
+            color: rgb(18, 238, 194);
+          "
+        >
+          <%= msg %>
+        </div>
+      </h1>
+      <% if (isAuthenticated) { %>
+      <h2>You are logged in!</h2>
+      <% } %>
+    </main>
+    <style id="compiled-css" type="text/css">
+      div {
+        text-align: justify;
+        margin: 10px;
+      }
+
+      div img {
+        display: inline-block;
+        width: 400px;
+        height: 400px;
+      }
+
+      div:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+      }
+    </style>
+    <div>
+      <img
+        src="resources/banner-pfgz3cuffrry5nfh2bzyzzhodk54qrgexmu5kkdreo-removebg-preview.png"
+      />
+      <img src="resources\hospital-removebg-preview.png" />
+      <img
+        src="resources\happy-male-doctor-presenting-you-something-on-white-background-DY7R41-removebg-preview.png"
+        style="width: 500px"
+      />
+    </div>
+  </body>
+</html>
